@@ -1,0 +1,16 @@
+<ol>
+  <li *ngFor="let name of userNames">{{name}}</li>
+</ol>
+<hr>
+<table border="1">
+  <tr>
+    <th>Employee Id</th>
+    <th>name</th>
+    <th>Salary</th>
+  </tr>
+  <tr *ngFor="let employee of allEmployees">
+    <td>{{employee.employeeId}}</td>
+    <td>{{employee.name}}</td>
+    <td>{{employee.salary}}</td>
+  </tr>
+</table>

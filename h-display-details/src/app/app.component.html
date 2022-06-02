@@ -1,0 +1,11 @@
+<button (click)="chanegdtext()">Show Details</button>
+<!-- <div id="myDiv">Secret Password = K-K-COOL</div> -->
+<p *ngIf="showSecret">Secret Password = K-K-COOL</p>
+<!-- <p *ngFor="let c1 of counterarr">{{c1}}</p>   this is partially right
+<h1 [ngStyle]="{backgroundColor: getColor()}">{{counter}}</h1> -->
+
+
+<div *ngFor="let count of counterarr">
+    <p [ngStyle]="{backgroundColor: getColor(count)}">{{count}}</p>
+    <!-- we can also write condition directly in instead of method -->
+</div>
