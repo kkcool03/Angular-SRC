@@ -1,0 +1,6 @@
+<label>Username: </label>
+<!-- <input type="text" (input)="onUpdateServerName($event)"/> -->
+<input type="text" [(ngModel)] = "userName">
+<br>
+<p>{{userName}}</p>
+<button [disabled] = "userName===''" (click)="reset()">Reset User</button>
